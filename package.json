@@ -1,0 +1,13 @@
+{
+  "name": "control-samsung-tv",
+  "description": "Discover and control Samsung TVs directly CLI tool via IP as a dependencyless node tool",
+  "version": "0.0.1",
+  "type": "module",
+  "main": "control-samsung-tv.ts",
+  "scripts": {
+    "start": "control-samsung-tv.ts"
+  },
+  "dependencies": {
+    "samsung-tv-remote": "^2.2.0"
+  }
+}
