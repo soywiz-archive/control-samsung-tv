@@ -118,7 +118,7 @@ async function getCachedSamsungDevices(): Promise<DeviceInfo[]> {
     }
 
     const cachePath = getCachePath()
-    let result = {}
+    let result: { [key: string]: DeviceInfo } = {}
     try {
         result = JSON.parse(await fs.promises.readFile(cachePath, { encoding: 'utf-8' }))
     } catch (e) {

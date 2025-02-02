@@ -7,7 +7,24 @@
   "scripts": {
     "start": "control-samsung-tv.ts"
   },
+  "bin": {
+    "control-samsung-tv": "./control-samsung-tv.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/soywiz-archive/control-samsung-tv"
+  },
+  "engines": {
+    "node": ">=23.0.0"
+  },
+  "preferGlobal": true,
+  "license": "MIT",
   "dependencies": {
-    "samsung-tv-remote": "^2.2.0"
+    "samsung-tv-remote": "^2.2.0",
+    "typescript": "^5.7.3"
+  },
+  "devDependencies": {
+    "@types/node": "^22.13.0",
+    "@types/ws": "^8.5.14"
   }
 }
